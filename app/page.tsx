@@ -11,7 +11,7 @@ export default function Home() {
     formData.append("key", process.env.NEXT_PUBLIC_MEANINGCLOUD_KEY ?? "");
     formData.append("lang", "auto");
     const data = Object.fromEntries(formData.entries());
-    console.log(data);
+    console.log("data", data);
 
     const requestOptions = {
       method: "POST",
